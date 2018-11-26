@@ -1,0 +1,9 @@
+
+a{
+    font-size: 100%;
+    color: #000;
+}
+a:hover {
+    font-size: 25px;
+    color:#100;
+    }
