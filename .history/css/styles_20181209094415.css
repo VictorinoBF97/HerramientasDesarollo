@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+/* CUERPO DE LA PÁGINA HTML */
+html {
+  background-color: #c2e2e4;
+  overflow: auto;
+  overflow-x: scroll; }
+
+/* TÍTULO PRINCIPAL DEL ÍNDICE */
+.titulo {
+  text-shadow: 0px 0px 5px #989993;
+  border: 15px ridge #1E90FF;
+  width: 75%; 
+  text-align:right;}
+
+/* TÍTULOS */
+h1 {
+  font-size: 60px;
+  font-family: 'Futura';
+  color: #070061;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #033a75, 0 0 30px #033a75, 0 0 40px #033a75, 0 0 55px #033a75, 0 0 75px #033a75;
+  text-align: right; }
+
+h2, h3, h4 {
+  font-size: 25px;
+  font-family: 'Futura';
+  color: #070061;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #033a75, 0 0 30px #033a75, 0 0 10px #033a75, 0 0 55px #033a75, 0 0 75px #033a75; }
+
+/* CUERPO DE LA PÁGINA */
+body {
+  font: 17px/1.5 'PT Sans', serif;
+  font-weight: bold;
+  overflow: hidden;
+  padding-left: 25px;
+  padding-top: 25px; }
+
+/* ÍNDICE */
+.indice {
+  font-size: 125%; }
+
+strong {
+  font-size:115%;
+}
+
+/* ENLACES Y REDIRECCIONAMIENTO */
+a {
+  background: rgb(1, 56, 107);
+  border-radius: 3px 0 0 3px;
+  color: #ffff33;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px 0 23px;
+  position: relative;
+  margin: 10px 10px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s; }
+
+a::before {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+  content: '';
+  height: 6px;
+  left: 10px;
+  position: absolute;
+  width: 6px;
+  top: 10px; }
+
+a::after {
+  background: #c2e2e4;
+  border-bottom: 13px solid transparent;
+  border-left: 10px solid rgb(1, 56, 107);
+  border-top: 13px solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+a:hover {
+  background-color: rgb(220,20,60);
+  color: #ffffff; }
+
+a:hover::after {
+  border-left-color: rgb(220,20,60); }
+
+/* VOLVER AL ├ìNDICE */
+.volver::after {
+  background: #c2e2e4;
+  border-bottom: 13px solid transparent;
+  border-left: 10px solid black;
+  border-top: 13px solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.volver:hover {
+  background-color: rgb(220,20,60);
+  color: #ffffff; }
+
+.volver:hover::after {
+  border-right-color: rgb(220,20,60); }
+
+/*# sourceMappingURL=styles.css.map */
